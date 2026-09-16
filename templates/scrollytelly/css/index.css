@@ -82,3 +82,12 @@ body {
 .slide-nav-select {
   min-width: 0;
 }
+
+/* adjust for smaller screens */
+@media screen and (max-width: 768px) {
+  .slide {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
