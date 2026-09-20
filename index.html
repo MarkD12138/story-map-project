@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Unequal Heat Vulnerability in Philadelphia</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <main>
+    <div class="map-container">
+      <div class="map" id="map"></div>
+    </div>
+    <section class="slide-section">
+      <article class="slide" id="philly_city">
+        <h1>Unequal Heat Vulnerability in Philadelphia</h1>
+        <p>Climate change is making Philadelphia hotter and increasing the danger of extreme heat. But heat risk is not shared equally across the city.</p>
+        <p>This story map moves from the citywide pattern of heat vulnerability to Hunting Park, where heat exposure, social sensitivity, parks, and street trees can be viewed together.</p>
+      </article>
+
+      <article class="slide" id="citywide_hvi">
+        <h2>Heat vulnerability is not evenly distributed</h2>
+        <p>Philadelphia's Heat Vulnerability Index (HVI) combines heat exposure with the social and health factors that make residents more sensitive to extreme heat. Higher values indicate greater combined vulnerability.</p>
+      </article>
+
+      <article class="slide" id="hunting_park">
+        <h2>A closer look at Hunting Park Area</h2>
+        <p>Zooming in reveals several high-vulnerability census tracts in and around Hunting Park. The pattern reflects both hotter local conditions and a greater sensitivity to heat-related health risks.</p>
+      </article>
+
+      <article class="slide" id="hunting_park_green">
+        <h2>Heat vulnerability, parks, and trees</h2>
+        <p>Within the same area, this map layers PPR-managed parks and the street-tree inventory over heat vulnerability. It shows a spatial relationship, not proof that park or tree access alone causes heat vulnerability.</p>
+        <p class="sources">Sources: <a href="https://opendataphilly.org/datasets/heat-vulnerability-by-census-tract/">Heat Vulnerability by Census Tract (2023)</a>, <a href="https://opendataphilly.org/datasets/ppr-properties/">PPR Properties</a>, and <a href="https://opendataphilly.org/datasets/philadelphia-tree-inventory/">Philadelphia Tree Inventory (2025)</a>.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>
